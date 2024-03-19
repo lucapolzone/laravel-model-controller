@@ -1,1 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
+
+li {
+  list-style-type: none;
+}
+
+header {
+  border: 2px solid red;
+    li {
+      padding: 0 5px;
+    }
+}
+
+
+footer {
+  border: 2px solid green;
+}
