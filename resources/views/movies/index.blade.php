@@ -15,7 +15,7 @@
             <div class="card">
               <div class="card-body">
                 <h6>{{ $movie->title }}</h6>
-                <a href="{{ route('movies.show', ['id' => $movie->id, ])}}">Dettagli</a>
+                <a href="{{ route('movies.show', $movie)}}">Dettagli</a>
               </div>
             </div>
           </div>

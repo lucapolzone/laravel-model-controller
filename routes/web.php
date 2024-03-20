@@ -22,5 +22,5 @@ Route::get('/contacts', [PageController::class,'contacts'])->name('contacts');
 Route::get('/movies', [MovieController::class,'index'])->name('movies.index');
 
 //show: ci da il dettaglio di una risorsa
-Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+Route::get('/movies/{movie}', [MovieController::class, 'show'])->name('movies.show');
 

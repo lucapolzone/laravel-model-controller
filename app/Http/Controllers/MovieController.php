@@ -16,13 +16,13 @@ class MovieController extends Controller
 
 
 	//Mostra il dettaglio della risorsa Movie
-	public function show(int $id) {
-		$movie = Movie::find($id);
+	public function show(Movie $movie) {
+		// $movie = Movie::find($id);
 		// dd($movie);
 
-		if (empty($movie)) 
-			abort(404);
-		
+		// if (empty($movie)) 
+			// abort(404);
+
 		return view('movies.show', compact('movie'));
 	}
 }
