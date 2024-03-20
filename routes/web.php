@@ -23,3 +23,4 @@ Route::get('/movies', [MovieController::class,'index'])->name('movies.index');
 
 //show: ci da il dettaglio di una risorsa
 Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+
