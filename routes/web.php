@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\MovieController;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
