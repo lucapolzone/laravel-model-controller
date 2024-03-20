@@ -19,3 +19,4 @@ Route::get('/', [PageController::class,'index'])->name('home');
 Route::get('/contacts', [PageController::class,'contacts'])->name('contacts');
 
 Route::get('/movies', [MovieController::class,'index'])->name('movies.index');
+
