@@ -15,13 +15,14 @@
             <div class="card">
               <div class="card-body">
                 <h6>{{ $movie->title }}</h6>
+                <a href="{{ route('movies.show', ['id' => $movie->id, ])}}">Dettagli</a>
               </div>
             </div>
           </div>
 
         @empty
         <div class="col-12">
-          No books
+          No Movies
         </div>          
         @endforelse          
 

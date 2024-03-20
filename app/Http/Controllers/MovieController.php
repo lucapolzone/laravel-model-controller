@@ -7,10 +7,17 @@ use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
-    //Mostra la lista della risorsa Movie
+	//Mostra la lista della risorsa Movie
 
-    public function index() {
-        $movies = Movie::all();
-        return view('movies.index', compact('movies'));
-    }
+	public function index() {
+		$movies = Movie::all();
+		return view('movies.index', compact('movies'));
+	}
+
+
+	//Mostra il dettaglio della risorsa Movie
+	public function show(int $id) {
+		$movie = Movie::find($id);
+		dd($movie);
+	}
 }

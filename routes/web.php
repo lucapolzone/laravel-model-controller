@@ -18,5 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class,'index'])->name('home');
 Route::get('/contacts', [PageController::class,'contacts'])->name('contacts');
 
+//index: pagina iniziale con la lista della risorsa
 Route::get('/movies', [MovieController::class,'index'])->name('movies.index');
 
+//show: ci da il dettaglio di una risorsa
+Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
