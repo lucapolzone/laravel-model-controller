@@ -14,7 +14,7 @@
           <div class="col-4">
             <div class="card">
               <div class="card-body">
-                <h4>{{ $movie->title }}</h4>
+                <h6>{{ $movie->title }}</h6>
               </div>
             </div>
           </div>
